@@ -26,7 +26,10 @@
         <input type="text" name="email" id="email"><br>
         <label for="password">Password : </label>
         <input type="text" name="password" id="password">
+		<input type="submit">
     </form>
-    <p>Error : <span>Non</span></p>
+	{% if error %}
+		<p>Error : <span>{{error}}</span></p>
+	{% endif %}
 </body>
 </html>
